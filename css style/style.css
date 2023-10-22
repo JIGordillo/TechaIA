@@ -124,6 +124,9 @@ h1 {
 }
 
 /*-----------------------MOVIE SECTION----*/
+.movies-main {
+    padding: 0 4% 2% 4%;
+}
  
   .news-container-m {
     display: flex;
@@ -242,9 +245,7 @@ h1 {
 
 .footer-m1 {
     display: flex;
-    margin-top: 3rem;
     width: 100%;
-
     
 }
 
@@ -257,6 +258,7 @@ h1 {
     margin: auto; 
     height: 15rem;
     width: 100%;
+    padding-left: 2%;
 }
 
 .footer-links{
@@ -331,4 +333,19 @@ h1 {
     display: flex;
     width: 13rem;
     padding-right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-m {
+        padding-left: 0;
+    }
+    .logo-footer a img {
+        display: none;
+    }
+    .footer-icons ul {
+        flex-direction: column;
+    }
+    .footer-icons ul li {
+        padding: 10% 0;
+    }
 }
