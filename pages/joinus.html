@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css style/style.css" type="text/css" rel="stylesheet">
-
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
     <title>Watch your inspiration</title>
 </head>
 <body>
@@ -56,12 +55,12 @@
 
   <!-------------------------------------------MOVIES PRESENTATION-->
 
-  <h1>Tell us your Notice</h1> 
+  <h1>Tell us about your news</h1> 
 
   <section class="container joinus-m">
-  <form class="user-news-m">
+  <form class="user-news-m container">
     <div class="mb-3">
-        <label for="input-name" class="form-label">Name</label>
+        <label for="input-name" class="form-label">First Name</label>
         <input type="personal-information" class="form-control" id="personal-information" aria-describedby="emailHelp">
       </div>
       <div class="mb-3">
@@ -71,17 +70,19 @@
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email address</label>
       <input type="personal-information" class="form-control" id="personal-information" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      <div id="emailHelp" class="form-text">We'll never share your email or any personal information with anyone else.</div>
     </div>
     <div class="mb-3">
-      <label for="Comment" class="form-label" maxlength="300" >Whats it about?</label>
-      <input type="text" class="form-control" id="field-topsearch">
+      <label for="exampleFormControlTextarea1" class="form-label">Tell us</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
     </div>
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="Register">
-      <label class="form-check-label" for="Register">Check me out</label>
+    <div class="mb-3">
+      <label for="formFileMultiple" class="form-label">Import files/media</label>
+      <input class="form-control" type="file" id="formFileMultiple" multiple>
     </div>
-    <button type="submit" class="btn btn-primary button-m">Share it</button>
+    <div class="container d-grid gap-2 col-6 mx-auto">
+    <button type="button" class="btn btn-outline-secondary btn-m" id="btn">Share</button>
+    </div>
   </form>
 </section>
 

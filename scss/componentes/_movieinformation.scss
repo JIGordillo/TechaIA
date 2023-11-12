@@ -1,0 +1,42 @@
+.movie-description-m {
+    @extend %centerdisposition;
+    margin: $generalmargin;
+
+    p {
+    @extend %textdisposition;
+    margin-top: 2rem;
+    color: nth($seconpalette, 1);
+    }
+
+    h3 {
+        color: nth($mainpalette, 2);
+        margin: 2rem 0;
+    }
+
+    .reparto-list {
+        color: nth($seconpalette, 1);
+        text-align: left;
+    }
+
+}
+
+
+.container-reparto-m{
+    @extend %centerdisposition;
+    .reparto-m{
+        @extend %centerdisposition;
+        margin: 2rem 0;
+    
+    }
+}
+
+.platform-m {
+    display: block;
+    margin: $generalmargin;
+    color:nth($seconpalette, 1);
+    ul{
+        list-style: none;
+    }
+}
+
+

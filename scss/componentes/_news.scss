@@ -1,0 +1,28 @@
+.title-container{
+    display: flex;
+    .news-title-m{
+        @extend %centerdisposition;
+        width: 100%;
+        margin: $generalmargin;
+        img {
+            filter: brightness(30%);
+        }
+
+        .title-notice-m{
+            position: unset;
+            h2 {
+                color: nth($mainpalette, 2);
+                @extend %textdisposition;
+            }
+        }
+    }
+}
+
+.news-media {
+    @extend %centerdisposition;
+    margin: 2rem 0;
+}
+
+
+
+

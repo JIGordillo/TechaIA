@@ -1,0 +1,33 @@
+.dropdown {
+    position: relative;
+    &:hover{
+        .dropdown-menu{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: nth($seconpalette, 2);
+    border-radius: $borderradioimg;
+    padding: 0;
+    li {
+        display: block;
+        a {
+            color: nth($mainpalette, 2);
+            &:hover {
+                background-color: nth($mainpalette, 2);
+                color: nth($mainpalette, 1);
+                border-radius: $borderradioimg;
+            }
+        }
+    }
+}
+
+
+

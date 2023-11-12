@@ -1,0 +1,78 @@
+.footer-m1 {
+    display: flex;
+    width: 100%;
+    background-color: nth($mainpalette, 2);
+    margin-top: 3rem;
+    
+    .footer-m {
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: $generalmargin; 
+        height: 15rem;
+        width: 100%;
+        
+        .footer-links{
+            display: flex;
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                li{
+                    list-style: none;
+                    a {
+                        display: flex;
+                        color: nth($seconpalette, 2);
+                        -webkit-tap-highlight-color: transparent;
+                        margin: 5% 0%;
+                        padding: 3px;
+                        &:hover {
+                            border: 2px nth($seconpalette, 2) solid;
+                            border-radius: 70px;
+                            background-color: nth($seconpalette, 2);
+                            color: nth($seconpalette, 1);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-icons{
+            @extend %centerdisposition;
+            width: 30%;
+            ul {
+                @extend %centerdisposition;
+                list-style: none;
+                width: 100%;
+                li {    
+                    margin: $generalmargin;
+                    a img{
+                        display: flex;
+                        width: 35px;
+                        transition: .3s ease-in-out;
+                        &:hover {
+                            width: 50px;                      
+                        }
+                    }
+                }
+           } 
+        }
+
+        .logo-footer {
+            display: flex;
+            filter: invert(1);
+            &:hover{
+                filter: invert(0);
+            }
+
+            a img {
+                display: flex;
+                width: 13rem;
+                @media screen {
+                    
+                }
+            }
+        }
+    }
+}

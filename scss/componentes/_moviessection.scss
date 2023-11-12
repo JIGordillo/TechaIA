@@ -1,0 +1,59 @@
+.news-container-m {
+    @extend %centerdisposition;
+    flex-direction: row;
+    width: 100%;
+    height: 18rem;
+  }
+
+.image-container {
+    @extend %centerdisposition;
+    width: 15%;
+    height: 90%;
+    opacity: 0.7;
+    transition: .3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    &:hover{
+      @extend %centerdisposition;
+      width: 17%;
+      height: 95%;
+      opacity: 1;
+      cursor: pointer;
+    }
+    
+    img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-radius: $borderradioimg;
+    }
+  } 
+
+.movies-main {
+  margin: $generalmargin;
+}
+
+.card{
+  border-radius: $borderradioimg;
+
+  img {
+    border-radius: $borderradioimg;
+    max-height: 400px;
+  }
+
+  &:hover{
+    background-color: nth($mainpalette, 2);
+    cursor: pointer;
+    }
+
+  .card-body{
+    h5{
+      @extend %centerdisposition;
+      color: nth($seconpalette, 2);
+    }
+
+    p{
+      color: nth($seconpalette, 2);
+    }
+  }
+} 
