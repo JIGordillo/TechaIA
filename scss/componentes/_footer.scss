@@ -9,7 +9,6 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: $generalmargin; 
         height: 15rem;
         width: 100%;
         
@@ -25,7 +24,6 @@
                         display: flex;
                         color: nth($seconpalette, 2);
                         -webkit-tap-highlight-color: transparent;
-                        margin: 5% 0%;
                         padding: 3px;
                         &:hover {
                             border: 2px nth($seconpalette, 2) solid;
@@ -46,7 +44,6 @@
                 list-style: none;
                 width: 100%;
                 li {    
-                    margin: $generalmargin;
                     a img{
                         display: flex;
                         width: 35px;

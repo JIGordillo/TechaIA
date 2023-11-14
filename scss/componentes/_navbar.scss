@@ -1,10 +1,12 @@
 .navbar-m {
+
     background-color: nth($seconpalette, 2);
     border-radius: 2px nth($seconpalette, 2) solid ;
 }
+
+.navbardiv-m {
+    margin: $generalmargin !important;}
 .navbar-items-m ul li a{
                 color: nth($mainpalette, 2);
 }
-
-
 
