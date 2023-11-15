@@ -1,12 +1,16 @@
 .navbar-m {
-
+    font-family: 'Noto Serif', serif;
     background-color: nth($seconpalette, 2);
     border-radius: 2px nth($seconpalette, 2) solid ;
 }
 
 .navbardiv-m {
-    margin: $generalmargin !important;}
+    margin: $generalmargin !important;
+}
 .navbar-items-m ul li a{
                 color: nth($mainpalette, 2);
-}
+                &:hover{
+                    color: nth($mainpalette, 3);
 
+                }
+}

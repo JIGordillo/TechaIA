@@ -22,7 +22,7 @@
             color: nth($mainpalette, 2);
             &:hover {
                 background-color: nth($mainpalette, 2);
-                color: nth($mainpalette, 1);
+                color: nth($mainpalette, 1) !important;
                 border-radius: $borderradioimg;
             }
         }

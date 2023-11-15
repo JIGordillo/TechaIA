@@ -1,24 +1,22 @@
 .carousel-m {
     opacity: 50%;
     padding-top: 2rem;
+    text-align: left;
     &:hover {
         opacity: 100%;
         cursor: pointer;
     }
     p {
         color: nth($seconpalette, 1);
-        text-align: left;
-        align-items: end; 
     }
 
     h2 {
         color: nth($mainpalette, 3);
-        @extend %textdisposition;
     }
 
     img {
         border-radius: $borderradioimg;
-        height: 400px;
+        max-height: 400px;
     }
 
 }

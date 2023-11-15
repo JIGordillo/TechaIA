@@ -2,4 +2,13 @@ h1 {
     display: map-get($maintittle, disposition);
     padding: map-get($maintittle, paddtitle);
     color: map-get($maintittle, colortitle);
+    font-family: 'Oswald', sans-serif ;
+    font-weight: 550;
+}
+
+
+h2 {
+    @extend %textdisposition;
+    font-weight: 550;
+    font-family: 'Oswald', sans-serif ;
 }

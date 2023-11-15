@@ -7,7 +7,7 @@
 
 .image-container {
     @extend %centerdisposition;
-    width: 15%;
+    width: 12%;
     height: 90%;
     opacity: 0.7;
     transition: .3s ease-in-out;
@@ -15,7 +15,7 @@
     margin: 0;
     &:hover{
       @extend %centerdisposition;
-      width: 17%;
+      width: 15%;
       height: 95%;
       opacity: 1;
       cursor: pointer;
@@ -34,11 +34,14 @@
 }
 
 .card{
-  border-radius: $borderradioimg;
+  border: none;
+  border-radius: $borderradioimg ;
+
 
   img {
-    border-radius: $borderradioimg;
-    max-height: 400px;
+    border-top-left-radius: $borderradioimg ;
+    border-top-right-radius: $borderradioimg ;
+    max-height: 380px;
   }
 
   &:hover{
