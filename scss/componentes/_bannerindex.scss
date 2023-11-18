@@ -1,4 +1,8 @@
 .logo-index {
     @extend %centerdisposition;
-    padding: 5% 5% 10% 5%;
+    padding: 5%;
+    img {
+        display: flex;
+        width: -webkit-fill-available;
+    }
 }

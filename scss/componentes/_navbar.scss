@@ -14,3 +14,63 @@
 
                 }
 }
+
+@media screen and (max-width: 767px) {
+  .main-nav-m{    
+    z-index: 1;
+    justify-content: space-between;
+    margin: 0 10%;
+    align-items: center;
+  }
+
+  .navbar-items-m{
+    top: 81px;
+    padding: 0 5% 5% 5% !important;
+    background-color: nth($seconpalette, 2);
+    position: fixed;
+    right: -100%;
+    width: 60%;
+    max-height: fit-content;
+    transition: 0.5s ease-in-out;
+  }
+
+  .navbar-collapse.show {
+  right: 0;
+  }
+
+  .dropdown-m {
+    text-align: right;
+  }
+
+  .navbar-toggler-icon {
+    background-color: nth($mainpalette, 1) !important;
+
+  }
+
+
+.navbar-nav {
+text-align: left;
+width: 100%;
+}
+
+.navbar-nav .nav-item {
+width: 100%;
+}
+
+.navbar-nav .nav-item a {
+width: 100%;
+padding: 10px;
+color: nth($seconpalette, 1);
+border-radius: 20px;
+text-align: ce;
+}
+
+      .navbar-nav .nav-item a:hover {
+        background-color: nth($mainpalette, 2);
+        color: nth($mainpalette, 1);
+      }
+
+      .navbar-toggler-icon {
+        background-color: white;
+      }
+    }

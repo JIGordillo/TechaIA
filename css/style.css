@@ -52,6 +52,54 @@ h2 {
   color: rgb(118, 247, 118);
 }
 
+@media screen and (max-width: 767px) {
+  .main-nav-m {
+    z-index: 1;
+    justify-content: space-between;
+    margin: 0 10%;
+    align-items: center;
+  }
+  .navbar-items-m {
+    top: 81px;
+    padding: 0 5% 5% 5% !important;
+    background-color: rgba(20, 20, 20, 0.9921568627);
+    position: fixed;
+    right: -100%;
+    width: 60%;
+    max-height: fit-content;
+    transition: 0.5s ease-in-out;
+  }
+  .navbar-collapse.show {
+    right: 0;
+  }
+  .dropdown-m {
+    text-align: right;
+  }
+  .navbar-toggler-icon {
+    background-color: rgba(0, 0, 0, 0.9725490196) !important;
+  }
+  .navbar-nav {
+    text-align: left;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    width: 100%;
+  }
+  .navbar-nav .nav-item a {
+    width: 100%;
+    padding: 10px;
+    color: rgb(230, 230, 230);
+    border-radius: 20px;
+    text-align: ce;
+  }
+  .navbar-nav .nav-item a:hover {
+    background-color: rgb(250, 97, 50);
+    color: rgba(0, 0, 0, 0.9725490196);
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+  }
+}
 .dropdown {
   position: relative;
 }
@@ -81,7 +129,11 @@ h2 {
 }
 
 .logo-index {
-  padding: 5% 5% 10% 5%;
+  padding: 5%;
+}
+.logo-index img {
+  display: flex;
+  width: -webkit-fill-available;
 }
 
 .carousel-m {
@@ -104,6 +156,11 @@ h2 {
   max-height: 400px;
 }
 
+@media screen and (max-width: 767px) {
+  .carousel-m img {
+    max-height: 200px;
+  }
+}
 .news-container-m {
   flex-direction: row;
   width: 100%;
